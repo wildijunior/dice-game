@@ -6,7 +6,7 @@ var numeroAleatorio1 = Math.floor(Math.random() * 6) + 1;
 
 // mudar o src do html do primeiro dado
  var imagemAleatoriaDado = "dice" + numeroAleatorio1 + ".png";      // dice1.png    - dice6.png
- var imagemSrcAleatoria = "img/" + imagemAleatoriaDado;             // images/dice1.png             images/dice6.png
+ var imagemSrcAleatoria = "public/img/" + imagemAleatoriaDado;             // images/dice1.png             images/dice6.png
 
 
 // mudar atributo do elemento img
@@ -22,7 +22,7 @@ image1.setAttribute("src", imagemSrcAleatoria);
 var numeroAleatorio2 = Math.floor(Math.random() * 6) + 1;
 
 // muda src do html do segundo numero
-var imagemSrcAleatoria2 = "img/dice" + numeroAleatorio2 + ".png";
+var imagemSrcAleatoria2 = "public/img/dice" + numeroAleatorio2 + ".png";
 
 // recupera o img e seta o novo atributo, mudar o src dele para o que criou acima
 document.querySelectorAll("img")[1].setAttribute("src", imagemSrcAleatoria2);
